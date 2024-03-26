@@ -1,0 +1,5 @@
+name,age,role
+Jean,34,BA
+Henry,24,TA
+Edu,30,TA
+Simon,31,BA
