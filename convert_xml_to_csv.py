@@ -2,21 +2,21 @@ from xml.etree import ElementTree
 import csv
 
 #Parse
-xml = ElementTree.parse("data.xml")
+xml = ElementTree.parse("bank.xml")
 
 #Create CSV
-csvFile = open("data.csv", "w", encoding="utf-8")
+csvFile = open("bank.csv", "w", encoding="utf-8")
 csvFileWriter = csv.writer(csvFile)
 
 #ADD HEADER
-csvFileWriter.writerow(["name", "role", "age"])
+csvFileWriter.writerow(["name", "country", "age"])
 
-for employee in xml.findall("employee"):
-    if(employee):
-        name = employee.find("name")
-        role = employee.find("role")
-        age = employee.find("age")
+for customer in xml.findall("customer"):
+    if(customer):
+        name = customer.find("name")
+        country = customer.find("country")
+        age = customer.find("age")
 
-        csvLine = [name.text, role.text, age.text]
+        csvLine = [name.text, country.text, age.text]
         csvFileWriter.writerow(csvLine)
 csvFile.close()

@@ -1,0 +1,17 @@
+<customers>
+    <customer>
+        <name>Franc</name>
+        <country>Luxembourg</country>
+        <age>28</age>
+    </customer>
+    <customer>
+        <name>Albert</name>
+        <country>USA</country>
+        <age>35</age>
+    </customer>
+    <customer>
+        <name>Jerome</name>
+        <country>France</country>
+        <age>33</age>
+    </customer>
+</customers>
